@@ -19,9 +19,9 @@ export class Store extends Component {
     const icon = this.state.isCard ? 'view_list' : 'view_module';
     console.log(products);
     return (
-      <div>
+      <div><div>
       <IconSwitch icon={icon} onSwitch={(e) => this.setState({isCard: !this.state.isCard})}/>
-      <div>
+      <div></div>
         {this.state.isCard ? <CardsView cards={products} isActive={true} /> : <ListView items={products} isActive={true}/>}
       </div></div>
     );

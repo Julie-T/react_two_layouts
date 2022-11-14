@@ -1,18 +1,17 @@
 import React, { Component } from 'react'
+import '../css/shopItem.css'
 
 export class ShopItem extends Component {
   static propTypes = {}
 
   render() {
     return (
-      <div>
-        <div className="shopItem" style={{backgroundImage: `url(${this.props.img})` }}>
-        <span className='itemName'>{this.props.name}</span>
+      <div className="shopItem">
+      <img className='shopImg' src={this.props.img} alt='#'></img>
+        <div className='itemName'>{this.props.name}</div>
         <div className='itemColor'>{this.props.color}</div>
-        <div className='itemPrice'>{this.props.price}</div>
-        {/* <div className='itemImage'><img className='itemImageElem' src={this.props.img} alt='#'/></div> */}
+        <div className='itemPrice'>${this.props.price}</div>
         <button className='itemButton'>add to cart</button>
-      </div>
       </div>
     )
   }
