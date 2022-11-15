@@ -1,21 +1,8 @@
-
-.view_list {
+.view_list, .view_module {
     -webkit-appearance: none;
     -moz-appearance: none;
     cursor: pointer;
-    background-image: url('https://fonts.googleapis.com/icon?family=Material+Icons');
-    width: 50px;
-    height: 50px;
-}
-
-.view_module {
-    background-image: url('https://fonts.googleapis.com/icon?family=Material+Icons');
-    width: 50px;
-    height: 50px;
-}
-
-.imgIcon {
-    background-image: url('https://fonts.googleapis.com/icon?family=Material+Icons');
-    width: 50px;
-    height: 50px;
+    width: 300px;
+    height: 25px;
+    font-size: 10px;
 }

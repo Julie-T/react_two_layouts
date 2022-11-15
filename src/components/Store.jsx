@@ -4,6 +4,9 @@ import products from "../models/MainModel"
 import ListView from "./ListView"
 import CardsView from "./CardsView"
 import IconSwitch from "./IconSwitch"
+import ViewListIcon from '@mui/icons-material/ViewList';
+import ViewModuleIcon from '@mui/icons-material/ViewModule';
+import "../css/iconSwitch.css";
 
 export class Store extends Component {
   static propTypes = {};
@@ -16,7 +19,7 @@ export class Store extends Component {
   }
 
   render() {
-    const icon = this.state.isCard ? 'view_list' : 'view_module';
+    const icon = this.state.isCard ? <ViewListIcon className='view_list' fontSize="large"/> : <ViewModuleIcon className='view_module' fontSize="large"/>;
     console.log(products);
     return (
       <div><div>

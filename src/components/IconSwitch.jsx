@@ -1,19 +1,22 @@
-import PropTypes from 'prop-types'
-import React, { Component } from 'react'
-import '../css/iconSwitch.css'
+import PropTypes from "prop-types";
+import React, { Component } from "react";
+
 
 export class IconSwitch extends Component {
-  static propTypes = {}
+  static propTypes = {};
 
   render() {
     return (
-      <><button type='button' className={this.props.icon} key={this.props.icon} 
-      onClick={() => this.props.onSwitch()}>
-      <img className='imgIcon' alt='#'/>
-      </button>
+      <>
+        <button
+          type="button"
+          className={this.props.icon}
+          key={this.props.icon}
+          onClick={() => this.props.onSwitch()}
+        >{this.props.icon}</button>
       </>
-    )
+    );
   }
 }
 
-export default IconSwitch
+export default IconSwitch;
