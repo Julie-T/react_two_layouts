@@ -1,7 +1,16 @@
+import PropTypes from 'prop-types'
 import React, { Component } from "react";
 import '../css/shopCard.css'
 
 export class ShopCard extends Component {
+  
+  static propTypes = {
+    key: PropTypes.string,
+    name: PropTypes.string,
+    price: PropTypes.string,
+    color: PropTypes.string,
+    img: PropTypes.string,
+  }
 
   render() {
     return (

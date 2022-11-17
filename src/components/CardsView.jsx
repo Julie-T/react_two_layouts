@@ -1,10 +1,14 @@
 import PropTypes from "prop-types"
 import React, { Component } from "react"
 import ShopCard from "./ShopCard"
+import productModel from "../models/productModel"
 import '../css/cardsView.css'
 
 export class CardsView extends Component {
-  static propTypes = {};
+  static propTypes = {
+    cards: PropTypes.instanceOf(productModel).isRequired,
+    isActive: PropTypes.bool,
+  };
 
   render() {
     console.log(this.props.cards)

@@ -3,7 +3,10 @@ import React, { Component } from "react";
 
 
 export class IconSwitch extends Component {
-  static propTypes = {};
+  static propTypes = {
+    icon: PropTypes.element,
+    onSwitch: PropTypes.func.isRequired
+  };
 
   render() {
     return (

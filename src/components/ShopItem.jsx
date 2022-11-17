@@ -1,8 +1,15 @@
+import PropTypes from 'prop-types'
 import React, { Component } from 'react'
 import '../css/shopItem.css'
 
 export class ShopItem extends Component {
-  static propTypes = {}
+  static propTypes = {
+    key: PropTypes.string,
+    name: PropTypes.string,
+    price: PropTypes.string,
+    color: PropTypes.string,
+    img: PropTypes.string,
+  }
 
   render() {
     return (

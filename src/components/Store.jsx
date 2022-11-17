@@ -1,4 +1,3 @@
-import PropTypes from "prop-types"
 import React, { Component } from "react"
 import products from "../models/MainModel"
 import ListView from "./ListView"
@@ -9,7 +8,6 @@ import ViewModuleIcon from '@mui/icons-material/ViewModule';
 import "../css/iconSwitch.css";
 
 export class Store extends Component {
-  static propTypes = {};
 
   constructor(props) {
     super(props);
