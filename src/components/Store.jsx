@@ -5,7 +5,7 @@ import CardsView from "./CardsView"
 import IconSwitch from "./IconSwitch"
 import ViewListIcon from '@mui/icons-material/ViewList';
 import ViewModuleIcon from '@mui/icons-material/ViewModule';
-import "../css/iconSwitch.css";
+import "../css/main.css";
 
 export class Store extends Component {
 
@@ -20,9 +20,9 @@ export class Store extends Component {
     const icon = this.state.isCard ? <ViewListIcon className='view_list' fontSize="large"/> : <ViewModuleIcon className='view_module' fontSize="large"/>;
     console.log(products);
     return (
-      <div><div>
+      <div className='container'><div className='iconSwitch'>
       <IconSwitch icon={icon} onSwitch={(e) => this.setState({isCard: !this.state.isCard})}/>
-      <div></div>
+      </div><div className='mainBlock'>
         {this.state.isCard ? <CardsView cards={products} isActive={true} /> : <ListView items={products} isActive={true}/>}
       </div></div>
     );

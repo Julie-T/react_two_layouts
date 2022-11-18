@@ -10,14 +10,12 @@ export class IconSwitch extends Component {
 
   render() {
     return (
-      <>
-        <button
+        <div
           type="button"
-          className={this.props.icon}
+          className='button'
           key={this.props.icon}
           onClick={() => this.props.onSwitch()}
-        >{this.props.icon}</button>
-      </>
+        >{this.props.icon}</div>
     );
   }
 }
