@@ -10,9 +10,7 @@ export class IconSwitch extends Component {
 
   render() {
     return (
-        <label className='icon'
-          type="button"
-          className='button'
+        <label className='button'
           key={this.props.icon}
           onClick={() => this.props.onSwitch()}
         >{this.props.icon}</label>

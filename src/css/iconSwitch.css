@@ -1,9 +1,12 @@
 .view_list, .view_module {
     -webkit-appearance: none;
     -moz-appearance: none;
-    width: 60px;
-    height: 40px;
     color: #696969;
     cursor: pointer;
+}
+
+.button {
+    width: 60px;
+    height: 40px;
 }
 
