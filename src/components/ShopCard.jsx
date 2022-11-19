@@ -5,11 +5,11 @@ import '../css/shopCard.css'
 export class ShopCard extends Component {
   
   static propTypes = {
-    key: PropTypes.string,
-    name: PropTypes.string,
-    price: PropTypes.string,
-    color: PropTypes.string,
-    img: PropTypes.string,
+    key: PropTypes.string.isRequired,
+    name: PropTypes.string.isRequired,
+    price: PropTypes.number.isRequired,
+    color: PropTypes.string.isRequired,
+    img: PropTypes.string.isRequired,
   }
 
   render() {

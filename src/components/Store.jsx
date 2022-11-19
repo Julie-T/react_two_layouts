@@ -17,7 +17,7 @@ export class Store extends Component {
   }
 
   render() {
-    const icon = this.state.isCard ? <ViewListIcon className='view_list' fontSize="large"/> : <ViewModuleIcon className='view_module' fontSize="large"/>;
+    const icon = this.state.isCard ? <ViewListIcon className='view_list'/> : <ViewModuleIcon className='view_module'/>;
     console.log(products);
     return (
       <div className='container'><div className='iconSwitch'>

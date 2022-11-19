@@ -1,13 +1,12 @@
 import PropTypes from 'prop-types'
 import React, { Component } from 'react'
 import ShopItem from './ShopItem'
-import productModel from "../models/productModel"
 import '../css/listView.css'
 
 export class ListView extends Component {
   static propTypes = {
-    cards: PropTypes.instanceOf(productModel).isRequired,
-    isActive: PropTypes.bool,
+    cards: PropTypes.PropTypes.arrayOf(PropTypes.shape({name: PropTypes.string, price: PropTypes.number, color: PropTypes.string, img: PropTypes.string})).isRequired,
+    isActive: PropTypes.bool.isRequired,
   };
 
   render() {

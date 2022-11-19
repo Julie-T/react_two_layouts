@@ -1,12 +1,9 @@
 .view_list, .view_module {
     -webkit-appearance: none;
     -moz-appearance: none;
-    width: 30px;
-    height: 25px;
-    font-size: xxx-large;
+    width: 60px;
+    height: 40px;
     color: #696969;
-}
-
-.view_list:hover, .view_module:hover {
     cursor: pointer;
 }
+
